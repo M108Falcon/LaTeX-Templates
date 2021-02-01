@@ -1,0 +1,84 @@
+%Assignment Template
+
+% -------------------------------------------------------------
+% Dimensions of a4paper = 	210(w) x 297(h) mm
+% -------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{article}
+
+% Packages Used
+% -------------------------------------------------------------
+\usepackage[utf8]{inputenc} % universal encoding
+\usepackage[english]{babel} % support for international langs
+% Activate after done with document
+%\usepackage{fontspec} % to embed system fonts
+\usepackage{titlesec} % title and section mods
+\usepackage[margin=1.0in]{geometry} % page margins
+\usepackage{hyperref} % to add hyperlinks
+\usepackage{graphicx} % to insert images
+\usepackage{fancyhdr} % fancy page styles for headers/footers
+\usepackage{amssymb}  % extended symbols
+\usepackage{amsmath}  % to write mathematical equations
+\usepackage{amsfonts} % mathematical fonts
+\usepackage{array}    % for typesetting arrays
+% -------------------------------------------------------------
+
+% Set Roman font family as default
+% Comment this line before embedding fonts.
+\renewcommand{\familydefault}{\rmdefault}
+
+% After getting the required doc with pdflatex, Embed the system Font
+% Uncomment the lines below
+
+% -------------------------------------------------------------
+%\setromanfont{Liberation Serif}
+%\setsansfont{Liberation Sans}
+%\setmonofont{RobotoMono Nerd Font}
+% -------------------------------------------------------------
+
+% Compile with xelatex at last to get the font embedded
+% Compile again for ToC to render (if present)
+
+% Headers and footers
+% -------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{18/FET/BCS/155}
+\lhead{Submitted by: \href{mailto:mridul_wadhwa1819@manavrachna.net}{Mridul Wadhwa}}
+\rfoot{Page \thepage}
+% -------------------------------------------------------------
+
+% Hyperlink setup
+% -------------------------------------------------------------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  filecolor=purple,
+  urlcolor=blue,
+}
+% -------------------------------------------------------------
+
+% Formatting document parts
+% -------------------------------------------------------------
+\titleformat{\section}
+{\bfseries\large}
+{}
+{0em}
+{}[]  % to add horizontalrule just add [/titlerule]
+
+\titleformat{\subsection}
+{\bfseries\normalsize}
+{\arabic{subsection}.} 
+{0.2em}
+{}[\vspace{-5pt}]% to add horizontalrule just add [/titlerule]
+% -------------------------------------------------------------
+
+%\title{}
+%\author{}
+%\date
+
+\begin{document}
+
+%\maketitle
+
+\end{document}
