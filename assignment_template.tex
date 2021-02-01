@@ -21,6 +21,7 @@
 \usepackage{amsmath}  % to write mathematical equations
 \usepackage{amsfonts} % mathematical fonts
 \usepackage{array}    % for typesetting arrays
+\usepackage{pageslts} % find last page regardless of numbering
 % -------------------------------------------------------------
 
 % Set Roman font family as default
@@ -44,7 +45,7 @@
 \fancyhf{}
 \rhead{18/FET/BCS/155}
 \lhead{Submitted by: \href{mailto:mridul_wadhwa1819@manavrachna.net}{Mridul Wadhwa}}
-\rfoot{Page \thepage}
+\rfoot{Page \thepage \hspace{1mm}of \lastpageref{LastPages}}
 % -------------------------------------------------------------
 
 % Hyperlink setup
