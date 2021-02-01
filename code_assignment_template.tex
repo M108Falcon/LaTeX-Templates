@@ -1,0 +1,108 @@
+% Code Assignment Template
+
+% -------------------------------------------------------------
+% Dimensions of a4paper = 	210(w) x 297(h) mm
+% -------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{article}
+
+% Packages Used
+% -------------------------------------------------------------
+\usepackage[utf8]{inputenc} % universal encoding
+\usepackage[english]{babel} % support for international langs
+%Activate after done with doc
+%\usepackage{fontspec} % Embed system fonts
+\usepackage[margin=1.0in]{geometry} % page margins
+\usepackage{titlesec} % titles and section mods
+\usepackage{hyperref} % to add hyperlinks
+\usepackage{graphicx} % to add images
+\usepackage{listings} % to add code listing
+\usepackage{xcolor}   % to add colors
+\usepackage{fancyhdr} % fancy page style for headers/footers
+\usepackage{amssymb}  % extended symbols
+\usepackage{amsmath}  % mathematical symbols
+\usepackage{amsfonts} % to write mathematical equations
+\usepackage{array}    % typeset arrays
+% -------------------------------------------------------------
+
+% Set Roman font family as default
+% Comment this line before embedding fonts.
+\renewcommand{\familydefault}{\rmdefault}
+
+% After getting the required doc with pdflatex, Embed the system Fonts
+% Uncomment the lines below
+
+% -------------------------------------------------------------
+%\setromanfont{Liberation Serif}
+%\setsansfont{Liberation Sans}
+%\setmonofont{RobotoMono Nerd Font}
+% -------------------------------------------------------------
+
+% Compile with xelatex at last to get the font embedded
+% Compile again for ToC to render (if present)
+
+% Headers and footers
+% -------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{18/FET/BCS/155}
+\lhead{\href{mailto:mridul_wadhwa1819@manavrachna.net}{Mridul Wadhwa}}
+\rfoot{Page \thepage}
+% -------------------------------------------------------------
+
+% Hyperlink setup
+% -------------------------------------------------------------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=cyan,
+  filecolor=purple,
+  urlcolor=blue,
+}
+% -------------------------------------------------------------
+
+% Language style
+% -------------------------------------------------------------
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\footnotesize,
+  commentstyle=\slshape\color{violet},
+  keywordstyle=\bfseries\color{green!40!black},
+  stringstyle=\color{orange},
+  identifierstyle=\color{grey!50!blue},
+  tabsize=2,
+  showtabs=false,
+  showspaces=false,
+  showstringspaces=false,
+  belowskip=0pt,
+  breaklines=true,
+  extendedchars=true,
+  numbers=left,
+  firstnumber=1,
+  frame=single
+}
+% -------------------------------------------------------------
+
+% Formatting document parts
+% -------------------------------------------------------------
+\titleformat{\section}
+{\bfseries\normalsize}
+{}
+{0em}
+{}[]  % to add horizontalrul just add [/titlerule]
+
+\titleformat{\subsection}
+{\bfseries\normalsize}
+{\arabic{subsection}.} 
+{0.2em}
+{}[\vspace{-5pt}] % to add horizontalrul just add [/titlerule]
+% -------------------------------------------------------------
+
+%\title{}
+%\author{}}
+%\date{}
+
+\begin{document}
+
+%\maketitle
+
+\end{document}
