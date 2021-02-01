@@ -1,0 +1,191 @@
+%Report Template
+
+% -------------------------------------------------------------
+% Dimensions of a4paper = 	210(w) x 297(h) mm
+% -------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{article}
+
+% Packages Used
+% -------------------------------------------------------------
+\usepackage[utf8]{inputenc} % universal encoding
+\usepackage[english]{babel} % support for International langs
+% Activate after done with document
+%\usepackage{fontspec} % For system integration of fonts
+\usepackage{titlesec}  % title and section mods
+\usepackage[margin=1.0in]{geometry} % page margins
+\usepackage{hyperref}  % to add hyperlinks
+\usepackage{graphicx}  % to insert images
+\usepackage{fancyhdr}  % fancy page styles for headers/footers
+\usepackage{amssymb}   % for extended symbols
+\usepackage{amsmath}   % to write mathematical equations
+\usepackage{amsfonts}  % maths fonts
+\usepackage{array}     % for typesetting arrays
+% -------------------------------------------------------------
+
+% Uncomment below lines and embed fonts after done with pdflatex
+
+% -------------------------------------------------------------
+%\setromanfont{Your serif font here}
+%\setsansfont{Your sans font here}
+%\setmonofont{Your monospace font here}
+% -------------------------------------------------------------
+
+% Use xelatex to compile to embed your fonts
+% compile one more time for ToC to show up
+
+\renewcommand*\contentsname{Table of Contents}
+
+\pagestyle{fancy}
+
+% Hyperlink setup
+% -------------------------------------------------------------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  filecolor=purple,
+  urlcolor=cyan,
+}
+% -------------------------------------------------------------
+
+%Formatting document parts
+% -------------------------------------------------------------
+\titleformat{\section}
+{\bfseries\Large}
+{}
+{0em}
+{}[]  % to add horizontalrul just add [/titlerule]
+
+\titleformat{\subsection}
+{\bfseries\large}
+{} 
+{0em}
+{}[] % to add horizontalrul just add [/titlerule]
+
+\titleformat{\subsubsection}
+{\bfseries\normalsize}
+{}
+{0em}
+{}[\vspace{-5pt}]
+% -------------------------------------------------------------
+
+% Adding Title
+% -------------------------------------------------------------
+\title{Title of the Report here}
+\author{Name of the Author here}
+\date{} % Leve empty if not interested in showing date
+% -------------------------------------------------------------
+
+\begin{document}
+
+%Title Page
+% -------------------------------------------------------------
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+\end{titlepage}
+% -------------------------------------------------------------
+
+\pagenumbering{roman}
+
+%Acknowledgement page
+% -------------------------------------------------------------
+\section*{\hfil Acknowledgement}
+\fancyhead[L]{Report}
+\fancyhead[R]{Acknowledgement}
+\fancyfoot{}
+\fancyfoot[C]{\textbf{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\addcontentsline{toc}{section}{Acknowledgement}
+%Acknowledgement here
+\pagebreak
+% -------------------------------------------------------------
+
+%Declaration page
+% -------------------------------------------------------------
+\section*{\hfil Declaration}
+\fancyhead[L]{Report}
+\fancyhead[R]{Declaration}
+\fancyfoot{}
+\fancyfoot[C]{\textbf{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\addcontentsline{toc}{section}{Declaration} 
+% Declaration here
+\pagebreak
+% -------------------------------------------------------------
+
+% Certificate
+% -------------------------------------------------------------
+\section*{\hfil Certificate}
+\fancyhead[L]{Report}
+\fancyhead[R]{Certificate}
+\fancyfoot{}
+\fancyfoot[C]{\textbf{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\addcontentsline{toc}{section}{Certificate}
+% Certificate here
+\pagebreak
+% -------------------------------------------------------------
+
+% External Certification
+% -------------------------------------------------------------
+\section*{\hfil Certificate from Industry}
+\fancyhead[L]{Report}
+\fancyhead[R]{Certificate from Industry}
+\fancyfoot{}
+\fancyfoot[C]{\textbf{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\addcontentsline{toc}{section}{Certificate from Industry}
+% Certificate from industry here
+\pagebreak
+% -------------------------------------------------------------
+
+% Table of Contents (ToC)
+% -------------------------------------------------------------
+\tableofcontents
+\fancyhead[L]{Report}
+\fancyhead[R]{Table of Contents}
+\fancyfoot{}
+\fancyfoot[C]{\textbf{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\addcontentsline{toc}{section}{Table of Contents}
+\pagebreak
+% -------------------------------------------------------------
+
+% Abstract Page
+% -------------------------------------------------------------
+\section*{\hfil Abstract}
+\fancyhead[L]{Report}
+\fancyhead[R]{Abstract}
+\fancyfoot{}
+\fancyfoot[C]{\textbf{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\addcontentsline{toc}{section}{Abstract}
+% Add Abstract here
+\pagebreak
+% -------------------------------------------------------------
+
+\pagenumbering{arabic}
+
+% Body of Report
+% -------------------------------------------------------------
+\section{Section 1}
+\fancyhead[L]{Report}
+\fancyhead[R]{Section 1}
+\fancyfoot{}
+\fancyfoot[R]{Page \thepage}
+\subsection{Subsection 1}
+%Enter Text here
+\subsubsection{Subsubsection 1}
+%Enter Tex here
+
+\pagebreak
+
+% -------------------------------------------------------------
+\end{document}
