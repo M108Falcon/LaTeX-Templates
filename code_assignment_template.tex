@@ -1,7 +1,7 @@
 % Code Assignment Template
 
 % -------------------------------------------------------------
-% Dimensions of a4paper = 	210(w) x 297(h) mm
+% Dimensions of a4paper = 210(w) x 297(h) mm
 % -------------------------------------------------------------
 
 \documentclass[a4paper,12pt]{article}
@@ -10,7 +10,7 @@
 % -------------------------------------------------------------
 \usepackage[utf8]{inputenc} % universal encoding
 \usepackage[english]{babel} % support for international langs
-%Activate after done with doc
+%Activate after done with pdflatex
 %\usepackage{fontspec} % Embed system fonts
 \usepackage[margin=1.0in]{geometry} % page margins
 \usepackage{titlesec} % titles and section mods
@@ -29,8 +29,7 @@
 % Comment this line before embedding fonts.
 \renewcommand{\familydefault}{\rmdefault}
 
-% After getting the required doc with pdflatex, Embed the system Fonts
-% Uncomment the lines below
+% Uncomment below lines and embed fonts after done with pdflatex
 
 % -------------------------------------------------------------
 %\setromanfont{Liberation Serif}
@@ -63,7 +62,7 @@
 % Language style
 % -------------------------------------------------------------
 \lstset{
-  language=Python,
+  language=Python, % change language name to suit your needs
   basicstyle=\ttfamily\footnotesize,
   commentstyle=\slshape\color{violet},
   keywordstyle=\bfseries\color{green!40!black},
