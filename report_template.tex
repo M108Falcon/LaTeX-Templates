@@ -21,6 +21,7 @@
 \usepackage{amsmath}   % to write mathematical equations
 \usepackage{amsfonts}  % maths fonts
 \usepackage{array}     % for typesetting arrays
+\usepackage{pageslts}  % find last page regardless of numbering
 % -------------------------------------------------------------
 
 % Uncomment below lines and embed fonts after done with pdflatex
@@ -179,7 +180,7 @@
 \fancyhead[L]{Report}
 \fancyhead[R]{Section 1}
 \fancyfoot{}
-\fancyfoot[R]{Page \thepage}
+\fancyfoot[R]{Page \thepage \hspace{1mm}of \lastpageref{LastPages}}
 \subsection{Subsection 1}
 %Enter Text here
 \subsubsection{Subsubsection 1}
